@@ -1,49 +1,124 @@
 <!DOCTYPE html>
+<!--
+  Based on Plain-Academic by Vasilios Mavroudis
+  https://github.com/mavroudisv/plain-academic
+-->
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="liziwei — personal homepage" />
+  <meta name="author" content="liziwei" />
+  <meta name="description" content="Personal academic website of liziwei" />
   <title>liziwei</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div class="page">
-    <header class="hero" aria-label="liziwei">
-      <div class="hero__media" aria-hidden="true">
-        <img src="assets/hero.jpg" alt="" />
-        <div class="hero__veil"></div>
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">liziwei</a>
       </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-      <div class="hero__content">
-        <p class="hero__brand">liziwei</p>
-        <h1 class="hero__headline">在林间留下足迹</h1>
-        <p class="hero__lede">北京林业大学 · 个人主页</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="mailto:Llzzww06@bjfu.edu.cn">写信给我</a>
-          <a class="btn btn--ghost" href="#contact">联系方式</a>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-xs-12">
+        <div class="profile-section">
+          <div class="heading">liziwei</div>
+          <div class="row">
+            <div class="col-md-10 col-xs-4">
+              <img class="img-responsive profile-img" src="img/avatar.jpg" alt="Avatar of liziwei" />
+            </div>
+          </div>
+          <div class="info-text">
+            <i>Student</i><br />
+            <a href="https://www.bjfu.edu.cn/" target="_blank" rel="noopener">Beijing Forestry University</a><br />
+            北京林业大学<br /><br />
+            <b>Email</b>:
+            <a href="mailto:Llzzww06@bjfu.edu.cn">Llzzww06@bjfu.edu.cn</a><br />
+            <b>GitHub</b>:
+            <a href="https://github.com/Superprincess06" target="_blank" rel="noopener">Superprincess06</a>
+          </div>
+          <div class="link-list">
+            <a href="https://github.com/Superprincess06" class="social-link" target="_blank" rel="noopener">
+              <i class="fa fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="mailto:Llzzww06@bjfu.edu.cn" class="social-link">
+              <i class="fa fa-envelope" aria-hidden="true"></i> Email
+            </a>
+          </div>
         </div>
       </div>
-    </header>
 
-    <main id="contact" class="contact">
-      <div class="contact__inner">
-        <h2>联系我</h2>
-        <p>有想法、合作或想打个招呼，随时发邮件。</p>
-        <a class="contact__email" href="mailto:Llzzww06@bjfu.edu.cn">Llzzww06@bjfu.edu.cn</a>
+      <div class="col-md-8 col-xs-12">
+        <div class="content-section">
+          <p>
+            Hi, I am <b>liziwei</b>. I am a student at
+            <a href="https://www.bjfu.edu.cn/" target="_blank" rel="noopener">Beijing Forestry University</a>.
+            My interests include computer vision, deep learning, and building practical machine learning systems.
+            Feel free to reach me at
+            <a href="mailto:Llzzww06@bjfu.edu.cn">Llzzww06@bjfu.edu.cn</a>.
+          </p>
+
+          <h3 id="education">Education</h3>
+          <ul>
+            <li>
+              Beijing Forestry University (北京林业大学), Beijing, China
+            </li>
+          </ul>
+
+          <h3 id="research">Research Interests</h3>
+          <ul>
+            <li><b>Computer Vision.</b> Image classification and multi-label recognition.</li>
+            <li><b>Deep Learning.</b> CNN baselines, training pipelines, and model evaluation.</li>
+            <li><b>Applied ML.</b> End-to-end experiments for real-world visual recognition tasks.</li>
+          </ul>
+
+          <h3 id="projects">Selected Projects</h3>
+          <ul>
+            <li>
+              <b>FGVC Multi-label Leaf Disease Classification.</b>
+              A unified training and evaluation framework for multi-label plant disease recognition,
+              supporting multiple CNN backbones, pretrained weights, and automated evaluation logging.
+              Source:
+              <a href="https://github.com/Superprincess06/myreaserch" target="_blank" rel="noopener">myreaserch</a>
+            </li>
+          </ul>
+
+          <h3 id="contact">Contact</h3>
+          <ul>
+            <li>Email: <a href="mailto:Llzzww06@bjfu.edu.cn">Llzzww06@bjfu.edu.cn</a></li>
+            <li>
+              GitHub:
+              <a href="https://github.com/Superprincess06" target="_blank" rel="noopener">github.com/Superprincess06</a>
+            </li>
+          </ul>
+
+          <p class="update-note">Last update: 2026/10/30</p>
+        </div>
       </div>
-    </main>
-
-    <footer class="footer">
-      <span>© <span id="year"></span> liziwei</span>
-    </footer>
+    </div>
   </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

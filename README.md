@@ -1,13 +1,8 @@
 # liziwei
 
-个人主页 · [Llzzww06@bjfu.edu.cn](mailto:Llzzww06@bjfu.edu.cn)
+Academic personal homepage.
 
-## 本地预览
+- Site: https://superprincess06.github.io/
+- Email: [Llzzww06@bjfu.edu.cn](mailto:Llzzww06@bjfu.edu.cn)
 
-用浏览器直接打开 `index.html`，或在本目录启动静态服务。
-
-## GitHub Pages
-
-仓库启用 Pages 后，站点地址一般为：
-
-`https://<你的用户名>.github.io/<仓库名>/`
+Layout inspired by [Plain-Academic](https://github.com/mavroudisv/plain-academic) / [hsd1503.github.io](https://hsd1503.github.io/).
